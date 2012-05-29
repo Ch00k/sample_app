@@ -34,7 +34,7 @@ development:
   username: ay
   password: 123qwe
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   host: localhost
@@ -42,3 +42,6 @@ test:
   pool: 5
   username: ay
   password: 123qwe
+
+cucumber:
+  <<: *test
